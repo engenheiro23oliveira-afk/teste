@@ -5,48 +5,152 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ML2 Engenharia</title>
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #F4EEEA;
+  color: #213F99;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display';
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #25D366;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SERVIÇOS */
+.services {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  padding: 0 15px 20px;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-fixo img {
+  width: 30px;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>ML2 ENGENHARIA</h1>
-</header>
-
-<section class="banner">
-  <h2>Do projeto à realização</h2>
-  <p>Soluções de engenharia seguras, práticas e eficientes.</p>
-
-  <a class="whatsapp" href="https://wa.me/5521920014838" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-    Fale Conosco
-  </a>
+<section class="hero">
+  <div>
+    <h1>ML2 Engenharia</h1>
+    <p>Do projeto à realização com excelência</p>
+    <a href="https://wa.me/5521920014838" target="_blank">Fale Conosco</a>
+  </div>
 </section>
 
 <section class="services">
+  <h2>Nossos Serviços</h2>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-    <h3>PPCI e SPDA</h3>
-    <p>Projetos conforme normas do Corpo de Bombeiros e ABNT.</p>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+      <h3>PPCI e SPDA</h3>
+      <p>Projetos conforme normas técnicas e segurança total.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+      <h3>Regularização</h3>
+      <p>Regularização completa de imóveis.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+      <h3>Consultoria</h3>
+      <p>Consultoria técnica especializada.</p>
+    </div>
+
   </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
-    <h3>Regularização de Imóveis</h3>
-    <p>Regularização junto à prefeitura e cartório.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
-    <h3>Consultoria</h3>
-    <p>Consultoria técnica para condomínios.</p>
-  </div>
-
 </section>
+
+<a class="whatsapp-fixo" href="https://wa.me/5521920014838" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
 </body>
 </html>
