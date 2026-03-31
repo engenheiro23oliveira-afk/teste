@@ -1,22 +1,246 @@
-<section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ML2 Engenharia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #F4EEEA;
+  color: #213F99;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #F4EEEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo { height: 50px; }
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #213F99;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-family: 'Playfair Display';
+}
+
+.hero p { font-size: 20px; }
+
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #25D366;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section { padding: 80px 20px; text-align: center; }
+h2 { font-family: 'Playfair Display'; font-size: 40px; }
+
+/* SOBRE */
+.sobre p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* SERVIÇOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 { margin: 15px; }
+.card p { padding: 0 15px 20px; }
+
+/* DIFERENCIAIS */
+.diferenciais {
+  background: #213F99;
+  color: white;
+}
+
+.diferenciais .card {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* CONTATO */
+.contato a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #25D366;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp img { width: 50px; }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>ML2 Engenharia</h1>
+    <p>Soluções completas em engenharia civil com segurança, qualidade e conformidade legal.</p>
+    <a href="https://wa.me/5521920014838">Solicitar Atendimento</a>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <h2>Sobre Nós</h2>
+  <p>
+    Somos especialistas em engenharia civil, atuando com projetos, regularização de imóveis e consultoria técnica.
+    Garantimos segurança, conformidade com normas e valorização patrimonial para nossos clientes.
+  </p>
+</section>
+
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+      <h3>PPCI e SPDA</h3>
+      <p>Projetos conforme normas do Corpo de Bombeiros e ABNT.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+      <h3>Regularização de Imóveis</h3>
+      <p>Regularização junto à prefeitura, Receita Federal e cartórios.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+      <h3>Consultoria para Condomínios</h3>
+      <p>Gestão, manutenção e soluções técnicas.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
+      <h3>Laudos Técnicos</h3>
+      <p>Laudos, perícias e avaliações de imóveis.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+      <h3>Despachante Imobiliário</h3>
+      <p>Regularização completa de imóveis urbanos e rurais, incluindo toda documentação e processos legais.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="diferenciais">
   <h2>Por que escolher a ML2 Engenharia?</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Experiência Técnica</h3>
-      <p>Profissionais qualificados com atuação em diversas áreas da engenharia.</p>
+      <p>Profissionais qualificados e experientes.</p>
     </div>
 
     <div class="card">
       <h3>Regularização Completa</h3>
-      <p>Cuidamos de todo o processo documental do seu imóvel.</p>
+      <p>Cuidamos de todo o processo documental.</p>
     </div>
 
     <div class="card">
       <h3>Atendimento Ágil</h3>
-      <p>Respostas rápidas e acompanhamento completo do cliente.</p>
+      <p>Suporte rápido e acompanhamento contínuo.</p>
     </div>
 
   </div>
 </section>
+
+<section id="contato" class="contato">
+  <h2>Fale com um especialista agora</h2>
+  <p>Atendimento rápido via WhatsApp</p>
+  <a href="https://wa.me/5521920014838">Solicitar orçamento</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5521920014838">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</body>
+</html>
